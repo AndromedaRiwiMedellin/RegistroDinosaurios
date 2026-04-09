@@ -1,0 +1,5 @@
+.idea
+*.sln.iml
+*.user
+bin/
+obj/
