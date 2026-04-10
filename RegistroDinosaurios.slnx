@@ -1,3 +1,7 @@
 <Solution>
+  <Project Path="Registro.Application/Registro.Application.csproj" />
+  <Project Path="Registro.Console/Registro.Console.csproj" />
+  <Project Path="Registro.Domain/Registro.Domain.csproj" />
+  <Project Path="Registro.Infrastructure/Registro.Infrastructure.csproj" />
     
 </Solution>

@@ -24,7 +24,7 @@ public class DinosaurioDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
-        var connectionString = "";
+        var connectionString = "server=204.168.212.239;database=andromeda;user=root;password=KJUdGn89Nyj3pwGWhs1vRghsshnDQL";
 
         options.UseMySql(
             connectionString,
