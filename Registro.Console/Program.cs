@@ -2,6 +2,7 @@
 using Registro.Domain.Entities; 
 using Registro.Domain.Enum;
 using Registro.Domain.Interfaces;
+using Registro.Application.Services;
 
 public class Program
 {
@@ -20,8 +21,8 @@ public class Program
         Console.WriteLine("4.eliminar dinosaurio");
         Console.WriteLine("5.Salir");
     
-        Console.WriteLine("que opcion quieres continuar(1-5): ");
-        opcion = int.Parse(Console.ReadLine());
+        Console.Write("que opcion quieres continuar(1-5): ");
+        int.TryParse(Console.ReadLine(), out opcion);
 
         switch (opcion)
         {
@@ -35,13 +36,13 @@ public class Program
                     Console.WriteLine("2.salir");
                 
                     Console.Write("que opcion deseas realizar(1-2): ");
-                    opcion = int.Parse(Console.ReadLine());
+                    int.TryParse(Console.ReadLine(), out opcion);
 
                     switch (opcion)
                     {
                         case 1:
                             Console.Write("Nombre del dinosaurio:");
-                            string nombre = Console.ReadLine();
+                            string nombre = Console.ReadLine() ?? "";
                             Console.Write(@"Seleccione una especie 
 1.  Velociraptor,
 2.  Triceratops,
@@ -58,13 +59,13 @@ public class Program
                                 "5" => DinosaurioEnum.Diplodocus
                             };
                             Console.Write("Nombre de usuario:");
-                            string username = Console.ReadLine();
+                            string username = Console.ReadLine() ?? "";
 
                             Console.Write("Email:");
-                            string email = Console.ReadLine();
+                            string email = Console.ReadLine() ?? "";
 
                             Console.Write("Pasword: ");
-                            string password = Console.ReadLine();
+                            string password = Console.ReadLine() ?? "";
 
                             Console.Write("Age: ");
                             if (!int.TryParse(Console.ReadLine(), out int age))
@@ -74,13 +75,13 @@ public class Program
                             }
 
                             Console.Write("Direccion:");
-                            string direccion = Console.ReadLine();
+                            string direccion = Console.ReadLine() ?? "";
                         
                             Console.Write("Ciudad:");
-                            string ciudad = Console.ReadLine();
+                            string ciudad = Console.ReadLine() ?? "";
 
                             Console.Write("Pais: ");
-                            string pais = Console.ReadLine();
+                            string pais = Console.ReadLine() ?? "";
 
                             var dinosaurio = new Dinosaurio
                             {
@@ -118,7 +119,8 @@ public class Program
                     Console.WriteLine("3. Ver dinosaurio por código (email)");
                     Console.WriteLine("4. Listar por zona");
                     Console.WriteLine("5. Listar por sector");
-                    Console.WriteLine("6. Listar mayores de cierta edad"); Console.WriteLine("7. Listar por tipo (carnívoro/herbívoro)");
+                    Console.WriteLine("6. Listar mayores de cierta edad"); 
+                    Console.WriteLine("7. Listar por tipo (carnívoro/herbívoro)");
                     Console.WriteLine("8. Listado con nombres + códigos");
                     Console.WriteLine("9. Contar total de dinosaurios");
                     Console.WriteLine("10. contar por zona");
@@ -130,7 +132,7 @@ public class Program
                     Console.WriteLine("16. Salir");
 
                     Console.Write("Que opcion quieres continuar(1-16): ");
-                    opcion = int.Parse(Console.ReadLine());
+                    int.TryParse(Console.ReadLine(), out opcion);
 
                     switch (opcion)
                     {
@@ -189,7 +191,7 @@ public class Program
                     Console.WriteLine("3.Actualizar ubicación"); Console.WriteLine("4.salir ");
                 
                     Console.WriteLine("que opcion quieres continuar(1-4): ");
-                    opcion = int.Parse(Console.ReadLine());
+                    int.TryParse(Console.ReadLine(), out opcion);
 
                     switch (opcion)
                     {
@@ -215,7 +217,7 @@ public class Program
                                 break;
                             }
                             Console.Write("Nombre del dinosaurio:");
-                            string nombre = Console.ReadLine();
+                            string nombre = Console.ReadLine() ?? "";
                             Console.Write(@"Seleccione una especie 
 1.  Velociraptor,
 2.  Triceratops,
@@ -232,13 +234,13 @@ public class Program
                                 "5" => DinosaurioEnum.Diplodocus
                             };
                             Console.Write("Nombre de usuario:");
-                            string username = Console.ReadLine();
+                            string username = Console.ReadLine() ?? "";
 
                             Console.Write("Email:");
-                            string email = Console.ReadLine();
+                            string email = Console.ReadLine() ?? "";
 
                             Console.Write("Pasword: ");
-                            string password = Console.ReadLine();
+                            string password = Console.ReadLine() ?? "";
 
                             Console.Write("Age: ");
                             if (!int.TryParse(Console.ReadLine(), out int age))
@@ -248,13 +250,13 @@ public class Program
                             }
 
                             Console.Write("Direccion:");
-                            string direccion = Console.ReadLine();
+                            string direccion = Console.ReadLine() ?? "";
                         
                             Console.Write("Ciudad:");
-                            string ciudad = Console.ReadLine();
+                            string ciudad = Console.ReadLine() ?? "";
 
                             Console.Write("Pais: ");
-                            string pais = Console.ReadLine();
+                            string pais = Console.ReadLine() ?? "";
                             
                             actualizarDinosaurio.Nombre = nombre;
                             actualizarDinosaurio.Especie = especie;
@@ -291,7 +293,7 @@ public class Program
                     Console.WriteLine("3. salir");
                 
                     Console.WriteLine("que opcion  quieres continuar(1-3): ");  
-                    opcion = int.Parse(Console.ReadLine());
+                    int.TryParse(Console.ReadLine(), out opcion);
 
                 switch (opcion)
                 {
