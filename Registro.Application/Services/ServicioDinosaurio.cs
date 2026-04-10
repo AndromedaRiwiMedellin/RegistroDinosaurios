@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Registro.Domain.Entities;
 using Registro.Domain.Enums;
 
@@ -7,53 +8,67 @@ public class ServicioDinosaurio
 {
     private List<Dinosaurio> _dinosaurios = new List<Dinosaurio>();
 
-    public void RegistrarDinosaurio(Dinosaurio nuevoDino)
+    public string RegistrarDinosaurio(Dinosaurio nuevoDino)
     {
         if (_dinosaurios.Any(d => d.Id == nuevoDino.Id))
         {
-            Console.WriteLine($"El dinosaurio que digitaste ya esta registrado en el sistema");
-        }else if (_dinosaurios.Any(d => d.UserName == nuevoDino.UserName))
+            return "El id de Dinosaurio que digitaste ya esta registrado en el sistema";
+        }else if (_dinosaurios.Any(d => d.Username == nuevoDino.Username))
         {
-            Console.WriteLine("El Username que digitaste ya esta registrado en el sistema");
+            return "El UserName que digitaste ya esta registrado en el sistema";
         }else if (_dinosaurios.Any(d => d.Email == nuevoDino.Email))
         {
-            Console.WriteLine("El Email que digitaste ya esta    registrado en el sistema");
+            return "El Email que digitaste ya esta registrado en el sistema";
         }
         else
         {
             _dinosaurios.Add(nuevoDino);
-            Console.Write("Dinosaurio agregado exitosamente");
+            return "Dinosaurio agregado correctamente";
         }
+        
     }
     
-    public void EliminarDinosaurio(Dinosaurio eliminarDino)
+    public string EliminarDinosaurio(Dinosaurio eliminarDino)
     {
-        if (_dinosaurios.RemoveAll(d => d.UserName == eliminarDino.UserName) > 0)
+        if (_dinosaurios.RemoveAll(d => d.Username == eliminarDino.Username) > 0)
         {
-            Console.Write("Dinosaurio eliminado exitosamente");
+            return "Dinosaurio eliminado exitosamente";
         }
+        return "No se encontró ningún dinosaurio con ese Username";
     }
 
     private Dinosaurio? BuscadorDinosaurios(string BuscarDinosaurios)
     {
-        return _dinosaurios.FirstOrDefault(d => d.UserName == BuscarDinosaurios);
+        return _dinosaurios.FirstOrDefault(d => d.Username == BuscarDinosaurios);
         
     }
     
-    public void ActualizarContraseña(string Contraseña, string UserName)
+    public string ActualizarContraseña(string Password, string Username)
     {
-            var DinosaurioEncontrado = BuscadorDinosaurios(UserName);
+            var DinosaurioEncontrado = BuscadorDinosaurios(Username);
             if (DinosaurioEncontrado != null)
             {
-                Console.WriteLine($"Dinosauro encontrado: {DinosaurioEncontrado}");
-                DinosaurioEncontrado.Contrasena = Contraseña;
-                Console.Write("Los datos han sido actualizados correctamente");
+                
+                DinosaurioEncontrado.Password = Password;
+                return "Contraseña actualizada exitosamente";
+                
             }
             else
             {
-                Console.WriteLine("Dinosauro no encontrado");
+                return "El Dinosaurio no fue encontrado";
             }
+           
             
+    }
+
+    public List<Dinosaurio> ListarDinosaurios()
+    {
+        return _dinosaurios.OrderBy(d => d.Username).ToList();
+    }
+    
+    public int ContarDinosaurios()
+    {
+        return _dinosaurios.Count;
     }
 
 }

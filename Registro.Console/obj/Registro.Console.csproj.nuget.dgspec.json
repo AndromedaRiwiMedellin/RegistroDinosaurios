@@ -1,35 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Console/Registro.Console.csproj": {}
+    "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Console\\Registro.Console.csproj": {}
   },
   "projects": {
-    "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj": {
+    "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Application\\Registro.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj",
+        "projectUniqueName": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Application\\Registro.Application.csproj",
         "projectName": "Registro.Application",
-        "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj",
-        "packagesPath": "/home/cohorte6/.nuget/packages/",
-        "outputPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/obj/",
+        "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Application\\Registro.Application.csproj",
+        "packagesPath": "C:\\Users\\boter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cohorte6/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\boter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
-            "projectReferences": {
-              "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj": {
-                "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -63,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/cohorte6/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -341,33 +343,39 @@
         }
       }
     },
-    "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Console/Registro.Console.csproj": {
+    "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Console\\Registro.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Console/Registro.Console.csproj",
+        "projectUniqueName": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Console\\Registro.Console.csproj",
         "projectName": "Registro.Console",
-        "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Console/Registro.Console.csproj",
-        "packagesPath": "/home/cohorte6/.nuget/packages/",
-        "outputPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Console/obj/",
+        "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Console\\Registro.Console.csproj",
+        "packagesPath": "C:\\Users\\boter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Console\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cohorte6/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\boter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj": {
-                "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj"
+              "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Application\\Registro.Application.csproj": {
+                "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Application\\Registro.Application.csproj"
               },
-              "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj": {
-                "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj"
+              "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Infrastructure\\Registro.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Infrastructure\\Registro.Infrastructure.csproj"
               }
             }
           }
@@ -403,7 +411,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/cohorte6/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -681,32 +689,34 @@
         }
       }
     },
-    "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj": {
+    "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Domain\\Registro.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Domain\\Registro.Domain.csproj",
         "projectName": "Registro.Domain",
-        "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj",
-        "packagesPath": "/home/cohorte6/.nuget/packages/",
-        "outputPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/obj/",
+        "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Domain\\Registro.Domain.csproj",
+        "packagesPath": "C:\\Users\\boter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cohorte6/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\boter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
-            "projectReferences": {
-              "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj": {
-                "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -724,6 +734,28 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -740,7 +772,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/cohorte6/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1018,30 +1050,36 @@
         }
       }
     },
-    "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj": {
+    "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Infrastructure\\Registro.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Infrastructure\\Registro.Infrastructure.csproj",
         "projectName": "Registro.Infrastructure",
-        "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj",
-        "packagesPath": "/home/cohorte6/.nuget/packages/",
-        "outputPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Infrastructure\\Registro.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\boter\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/cohorte6/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\boter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj": {
-                "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Domain/Registro.Domain.csproj"
+              "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Domain\\Registro.Domain.csproj": {
+                "projectPath": "C:\\Users\\boter\\OneDrive\\Escritorio\\Andromeda\\RegistroDinosaurios\\Registro.Domain\\Registro.Domain.csproj"
               }
             }
           }
@@ -1077,7 +1115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/cohorte6/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
