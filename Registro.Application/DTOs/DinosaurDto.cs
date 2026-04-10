@@ -4,6 +4,8 @@ namespace Registro.Application.DTOs;
 
 public class DinosaurDto
 {
+    public int Id { get; set; }
+    public string Email { get; set; }
     public string Nombre { get; set; }
     
     public string Especie { get; set; }

@@ -20,6 +20,22 @@ public class DinosaurQueryService : IDinosaurQueryService
     
     
     // Filtros
+    public async Task<IEnumerable<DinosaurDto>> GetAll()
+    {
+        var dinosaurs = await _repository.GetAll();
+
+        return dinosaurs
+            .Select(d => new DinosaurDto
+            {
+                Id = d.Id,
+                Nombre = d.Nombre,
+                Especie = d.Especie,
+                Email = d.Email,
+                Edad = d.Edad,
+                Zona = d.Zona,
+                Sector = d.Sector
+            });
+    }
       public async Task<IEnumerable<DinosaurDto>> GetByZone(string zona)
     {
         var dinosaurs = await _repository.GetAll();
@@ -27,13 +43,51 @@ public class DinosaurQueryService : IDinosaurQueryService
         return dinosaurs
             .Where(d => d.Zona == zona)
             .Select(d => new DinosaurDto
-            {
+            {   
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
             });
+    }
+
+    public async Task<IEnumerable<DinosaurDto>> GetByEmail( string Email)
+    {
+        var Dinosaurs = Await _repository.GetAll();
+        return Dinosaurs.Where(d => d.email)
+            .Where(d => d.Email == Email)
+            .Select(d => new DinosaurDto
+            {
+                Id = d.Id,
+                Nombre = d.Nombre,
+                Especie = d.Especie,
+                Email = d.Email,
+                Edad = d.Edad,
+                Zona = d.Zona,
+                Sector = d.Sector
+            })
+    }
+    
+      // filtro por el ID
+    public async Task<DinosaurDto> GetById(int Id)
+    {
+        var dinosaurs = await _repository.GetAll();
+        return dinosaurs
+            .Where(d => d.Id == Id)
+            .Select(d => new DinosaurDto
+            {
+                Id = d.Id,
+                Nombre = d.Nombre,
+                Especie = d.Especie,
+                Email = d.Email,
+                Edad = d.Edad,
+                Zona = d.Zona,
+                Sector = d.Sector
+            })
+            .FirstOrDefault(d => d.Id == id);
     }
 
     public async Task<IEnumerable<DinosaurDto>> GetBySector(string sector)
@@ -44,8 +98,10 @@ public class DinosaurQueryService : IDinosaurQueryService
             .Where(d => d.Sector == sector)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -60,8 +116,44 @@ public class DinosaurQueryService : IDinosaurQueryService
             .Where(d => d.Edad == age)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
+                Edad = d.Edad,
+                Zona = d.Zona,
+                Sector = d.Sector
+            });
+    }
+
+
+    public async Task<IEnumerable<DinosaurDto>> GetNameById(string name)
+    {
+        var dinosaurs = await _repository.GetAll();
+
+        return dinosaurs
+            .Where(d => d.Nombre == name)
+            .Select(d => new DinosaurDto
+            {
+                Id = d.Id,
+                Nombre = d.Nombre,
+        
+            });
+    }
+    }
+
+    public async Task<IEnumerable<DinosaurDto>> GetMayoresByAge(int age)
+    {
+        var dinosaurs = await _repository.GetAll();
+
+        return dinosaurs
+            .Where(d => d.Edad > age)
+            .Select(d => new DinosaurDto
+            {
+                Id = d.Id,
+                Nombre = d.Nombre,
+                Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -77,8 +169,10 @@ public class DinosaurQueryService : IDinosaurQueryService
             .Where(d => d.Especie == especie)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -94,8 +188,10 @@ public class DinosaurQueryService : IDinosaurQueryService
             .OrderBy(d => d.Especie)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -110,8 +206,10 @@ public class DinosaurQueryService : IDinosaurQueryService
             .OrderBy(d => d.Zona)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -126,8 +224,10 @@ public class DinosaurQueryService : IDinosaurQueryService
             .OrderBy(d => d.Sector)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -142,8 +242,10 @@ public class DinosaurQueryService : IDinosaurQueryService
             .OrderBy(d => d.Edad)
             .Select(d => new DinosaurDto
             {
+                Id = d.Id,
                 Nombre = d.Nombre,
                 Especie = d.Especie,
+                Email = d.Email,
                 Edad = d.Edad,
                 Zona = d.Zona,
                 Sector = d.Sector
@@ -177,6 +279,8 @@ public class DinosaurQueryService : IDinosaurQueryService
                 Cantidad = g.Count()
             });
     }
+
+   
     
     
 }

@@ -7,12 +7,16 @@ namespace Registro.Application.Interfaces;
 public interface IDinosaurQueryService
 {
     //Filtros
+    Task<IEnumerable<DinosaurDto>> GetById(int id);
     Task<IEnumerable<DinosaurDto>> GetByZona(string zona);
     
     Task<IEnumerable<DinosaurDto>> GetBySector(string sector);
     
     Task<IEnumerable<DinosaurDto>> GetByAge(int age);
+    Task<IEnumerable<DinosaurDto>> GetMayoresDeEdad(int age);
     Task<IEnumerable<DinosaurDto>> GetByEspecie(string especie);
+    Task<IEnumerable<DinosaurDto>> GetByEmail(string Email);
+    Task<IEnumerable<DinosaurDto>> GetNameById(string name)
     
     //ordenamientos
     
