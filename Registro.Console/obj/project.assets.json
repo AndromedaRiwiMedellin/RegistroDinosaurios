@@ -1,11 +1,70 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Registro.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Registro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Registro.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Registro.Application.dll": {}
+        }
+      },
+      "Registro.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Registro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Registro.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Registro.Domain.dll": {}
+        }
+      },
+      "Registro.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Registro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Registro.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Registro.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Registro.Application/1.0.0": {
+      "type": "project",
+      "path": "../Registro.Application/Registro.Application.csproj",
+      "msbuildProject": "../Registro.Application/Registro.Application.csproj"
+    },
+    "Registro.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Registro.Domain/Registro.Domain.csproj",
+      "msbuildProject": "../Registro.Domain/Registro.Domain.csproj"
+    },
+    "Registro.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Registro.Infrastructure/Registro.Infrastructure.csproj",
+      "msbuildProject": "../Registro.Infrastructure/Registro.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Registro.Application >= 1.0.0",
+      "Registro.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/cohorte6/.nuget/packages/": {}
@@ -26,13 +85,19 @@
         "net10.0"
       ],
       "sources": {
-        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj": {
+              "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Application/Registro.Application.csproj"
+            },
+            "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj": {
+              "projectPath": "/home/cohorte6/Documentos/RegistroDinosaurios/Registro.Infrastructure/Registro.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -45,7 +110,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -66,7 +131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/home/cohorte6/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -343,5 +408,16 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \n  Registro.Console -> Registro.Infrastructure -> Registro.Domain -> Registro.Domain.",
+      "libraryId": "Registro.Domain",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
