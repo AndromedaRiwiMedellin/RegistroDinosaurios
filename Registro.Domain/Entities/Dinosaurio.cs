@@ -1,4 +1,3 @@
-using Registro.Domain.Interfaces;
 using Registro.Domain.Enum;
 using System.ComponentModel.DataAnnotations;
 
