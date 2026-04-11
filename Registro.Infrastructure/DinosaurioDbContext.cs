@@ -1,7 +1,7 @@
-using Microsoft.EntityFrameworkCore; 
-using Registro.Domain.Entities; 
+﻿using Microsoft.EntityFrameworkCore;
+using Registro.Domain.Entities;
 
-namespace Registro.Domain.Interfaces;
+namespace Registro.Domain.Interface;
 
 public class DinosaurioDbContext : DbContext
 {
@@ -17,7 +17,7 @@ public class DinosaurioDbContext : DbContext
             .HasIndex(d => d.Email)
             .IsUnique();
 		
-		modelBuilder.Entity<Dinosaurio>()
+        modelBuilder.Entity<Dinosaurio>()
             .Property(a => a.Especie)
             .HasConversion<string>();
     }
