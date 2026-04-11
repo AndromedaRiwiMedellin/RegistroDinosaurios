@@ -1,4 +1,4 @@
-using Registro.Domain.Interfaces;
+using Registro.Domain.Interface;
 using Registro.Domain.Enum;
 using System.ComponentModel.DataAnnotations;
 
@@ -10,7 +10,7 @@ public class Dinosaurio
     public int Id { get; set; }
     public required string Nombre { get; set; } 
     public DinosaurioEnum Especie { get; set; }
-    public required string Username { get; set; } 
+    public required string Username { get; set; }
     public required string Email { get; set; } 
     public required string Password { get; set; }  
     public int Age { get; set; }

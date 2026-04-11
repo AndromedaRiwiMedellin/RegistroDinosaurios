@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Registro.Domain.Entities; 
 using Registro.Domain.Enum;
-using Registro.Domain.Interfaces;
 using Registro.Application.Services;
 
 public class Program

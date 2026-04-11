@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Registro.Domain.Entities;
-using Registro.Domain.Enums;
+using Registro.Domain.Enum;
 
 namespace Registro.Application.Services;
 
@@ -71,5 +71,6 @@ public class ServicioDinosaurio
         return _dinosaurios.Count;
     }
 
+    
 }
 
